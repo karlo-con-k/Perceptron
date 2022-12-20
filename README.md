@@ -1,5 +1,5 @@
 # Perceptron
-Perceptron multicapa con diferentes descensos de gradiente.
+Perceptron multicapa que hice para practicar.
 
 
 
