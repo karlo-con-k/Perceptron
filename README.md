@@ -7,4 +7,7 @@ Perceptron multicapa que hice para practicar.
 ```
 Numpy
 matplotlib
+random
+math
+
 ```
