@@ -92,6 +92,7 @@ class Perceptron:
         '''
         Regreso la salida de cada capa del perseptron en una lista.
         '''
+
         lista = []
         
         if len(x) != self.dim_input:
@@ -138,7 +139,8 @@ class Perceptron:
             grad_dato *= aux[i]
             grad_dato *= -tam_paso
 
-        else:   #TODO falta debuguear esta parte que es cuando tiene mas de 2 capas 
+        else:   #TODO falta debuguear esta parte que es cuando tiene mas de 2 capas.
+                #TODO lo dejare pendiente para practicar las derivadas multidimencionales cuando le de seguimiento al repo. 
             grad_dato += predicion - dato[1]
             k = num_capas-k
 
@@ -178,7 +180,8 @@ class Perceptron:
         tam_muestra     = len(datos)
         contador = 0
 
-        # xn1 = self.error(datos)
+        # xn1 = self.error(datos) Esto es hacer la condicion de paro, cuando el error aumenta en ves de decrecer
+
         while True:
             contador += 1
             # xn = xn1
